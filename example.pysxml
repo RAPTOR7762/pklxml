@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pysxml>
+  <variable name="x" type="int">42</variable>
+  <variable name="name" type="str">Alice</variable>
+  
+  <list name="my_list">
+    <item type="int">1</item>
+    <item type="int">2</item>
+    <item type="str">hello</item>
+  </list>
+  
+  <dict name="my_dict">
+    <item>
+      <key type="str">a</key>
+      <value type="int">10</value>
+    </item>
+    <item>
+      <key type="str">b</key>
+      <value type="str">banana</value>
+    </item>
+  </dict>
+
+  <tuple name="coords">
+    <item type="float">3.14</item>
+    <item type="float">2.72</item>
+  </tuple>
+
+  <class name="Person">
+    <attribute name="name" type="str">Bob</attribute>
+    <attribute name="age" type="int">30</attribute>
+  </class>
+</pysxml>
