@@ -1,8 +1,9 @@
----
-version: 0.0.1
-PyPi: None
-File Extension: .pypxml
----
+## Project Metadata
+
+- **Version**: 0.0.1  
+- **PyPI**: Not published yet  
+- **File Extension**: `.pypxml`
+
 ```bash
 pip install git+https://github.com/RAPTOR7762/pypxml.git
 ```
