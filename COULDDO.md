@@ -1,3 +1,4 @@
 ## My Enhancement List
 
-* Add serialisation and deserialisation for classes, just like Pickle
+* **For v0.0.2**
+  * Add serialisation and deserialisation for classes, just like Pickle
