@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pysxml>
+<pklxml>
   <variable name="x" type="int">42</variable>
   <variable name="name" type="str">Alice</variable>
   
@@ -29,4 +29,4 @@
     <attribute name="name" type="str">Bob</attribute>
     <attribute name="age" type="int">30</attribute>
   </class>
-</pysxml>
+</pklxml>
