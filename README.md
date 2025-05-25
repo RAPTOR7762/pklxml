@@ -1,6 +1,6 @@
 ## Project Metadata
 
-- **Version**: 0.0.1  
+- **Version**: 0.1.0
 - **PyPI**: Pending publish
 - **File Extension**: `.pklxml`
 
