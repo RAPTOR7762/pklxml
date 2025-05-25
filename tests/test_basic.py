@@ -2,8 +2,8 @@ import pklxml
 
 # Serialize
 data = {'name': 'Alice', 'age': 30, 'skills': ['Python', 'XML']}
-pysxml.dump(data, 'output.pysxml')
+pklxml.dump(data, 'output.pklxml')
 
 # Deserialize
-restored = pysxml.load('output.pysxml')
+restored = pklxml.load('output.pklxml')
 print(restored)
