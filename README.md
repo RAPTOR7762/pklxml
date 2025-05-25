@@ -1,7 +1,7 @@
 ## Project Metadata
 
 - **Version**: 0.0.1  
-- **PyPI**: Not published yet  
+- **PyPI**: Pending publish
 - **File Extension**: `.pklxml`
 
 ```bash
