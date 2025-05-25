@@ -30,4 +30,4 @@ print(loaded_data)
 ```
 ## Contribute
 
-Contribute to this repository if you can! Thanks!
+Contribute to this repository if you can! Like my repository! Thanks!
