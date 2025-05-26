@@ -1,12 +1,9 @@
 ## Project Metadata
 
 - **Version**: 0.1.0
-- **PyPI**: Pending publish
+- **PyPI**: Published
 - **File Extension**: `.pklxml`
 
-```bash
-pip install git+https://github.com/RAPTOR7762/pklxml.git
-```
 ![License](https://img.shields.io/github/license/RAPTOR7762/pklxml)
 ![Stars](https://img.shields.io/github/stars/RAPTOR7762/pklxml)
 
@@ -23,9 +20,9 @@ I'm thinking of publishing this to PyPi, but maybe not so soon.
 from pklxml import dump, load
 
 data = {'name': 'Alice', 'age': 30}
-dump(data, 'data.pypxml')
+dump(data, 'data.pklxml')
 
-loaded_data = load('data.pypxml')
+loaded_data = load('data.pklxml')
 print(loaded_data)
 ```
 ## Contribute
