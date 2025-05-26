@@ -5,7 +5,6 @@
 - **File Extension**: `.pklxml`
 
 ![License](https://img.shields.io/github/license/RAPTOR7762/pklxml)
-![Stars](https://img.shields.io/github/stars/RAPTOR7762/pklxml)
 
 ## pklxml
 
