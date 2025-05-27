@@ -1,10 +1,6 @@
-## Project Metadata
-
-- **Version**: 0.1.3
-- **PyPI**: Published
-- **File Extension**: `.pklxml`
-
 ![License](https://img.shields.io/github/license/RAPTOR7762/pklxml)
+![PyPI](https://img.shields.io/pypi/v/pklxml)
+![File Extension](https://img.shields.io/badge/file%20extension-.pypxml-blue)
 
 ## pklxml
 
