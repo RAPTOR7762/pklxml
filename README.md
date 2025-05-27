@@ -15,8 +15,11 @@ from pklxml import dump, load
 data = {'name': 'Alice', 'age': 30}
 dump(data, 'data.pklxml')
 
-loaded_data = load('data.pklxml')
-print(loaded_data)
+try:
+    loaded_data = load('data.pklxml')
+    print(loaded_data)
+except OSError:
+    loaded_data = # [], {}, '', 0, anything except classes
 ```
 ## Contribute
 
