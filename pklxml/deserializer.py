@@ -1,7 +1,17 @@
 from lxml import etree
 
+def secureParser():
+    return etree.XMLParser(
+        resolve_entities=False,
+        no_network=True,
+        dtd_validation=False,
+        load_dtd=False,
+        huge_tree=False
+    )
+
 def load(file_path):
-    tree = etree.parse(file_path)
+    parser = secureParser()
+    tree = etree.parse(file_path, parser)  # parse the file using secure parser
     return _deserialize(tree.getroot())
 
 def _deserialize(element):
