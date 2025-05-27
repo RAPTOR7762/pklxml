@@ -16,10 +16,10 @@ data = {'name': 'Alice', 'age': 30}
 dump(data, 'data.pklxml')
 
 try:
-    data = load('data.pklxml')
-    print(data)
+  data = load('data.pklxml')
+  print(data)
 except OSError:
-    data = {}
+  data = {}
 ```
 ## Contribute
 
