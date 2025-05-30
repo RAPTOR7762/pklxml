@@ -72,4 +72,19 @@
     </xs:complexType>
   </xs:element>
 
+    <xs:element name="class">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="attribute" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType mixed="true">
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/> <!-- Class name -->
+      <xs:attribute name="module" type="xs:string" use="required"/> <!-- Module where class is defined -->
+    </xs:complexType>
+  </xs:element>
+
 </xs:schema>
