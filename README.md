@@ -6,7 +6,7 @@
 
 pklxml, short for Python **P**ic**kl**e E**x**tensible **M**arkup **L**anguage Library, is a Python module and as a human-readable alternative to [Pickle](https://docs.python.org/3/library/pickle.html). Instead of saving data as a binary `.pkl` file, it saves data as an XML-based file called `.pklxml`. This makes it a lot more safer. The module uses the LXML module to parse `.pklxml` (XML) files.
 
-The reason why I wanted to make this module is so that we (as humans) can see what has been actually saved. Currently, I have to open `.pkl` files with Qt Creator to decode the binary and usuall, with (no) success.
+The reason why I wanted to make this module is so that we (as humans) can see what has been actually saved. Currently, I have to open `.pkl` files with Qt Creator to decode the binary and usually, with (no) success.
 
 ## Example programme
 ```python
