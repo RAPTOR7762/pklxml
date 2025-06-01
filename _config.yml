@@ -1,5 +1,5 @@
-title: fritzing-renumber-cons
-description: Python scripts mainly used for renumbering connectors
+title: pklxml
+description: A human-readable and secure XML-based alternative to pickle.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-slate
