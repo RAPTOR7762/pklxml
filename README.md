@@ -27,7 +27,7 @@ except OSError:
 
 Class example code
 
-```
+```python
 from pklxml import dump, load
 
 # Define a simple class (normally this would be in a separate module)
