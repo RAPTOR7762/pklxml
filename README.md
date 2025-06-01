@@ -1,5 +1,5 @@
 ![License](https://img.shields.io/github/license/RAPTOR7762/pklxml)
-![PyPi](https://img.shields.io/badge/version-N/A-orange)
+![PyPi](https://img.shields.io/badge/version-v0.2.0-orange)
 ![File Extension](https://img.shields.io/badge/file%20extension-.pklxml-blue)
 
 ## pklxml
