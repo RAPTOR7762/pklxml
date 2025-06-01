@@ -42,7 +42,7 @@ def _deserialize(element):
         return [_cast(item.text, item.attrib['type']) for item in element.findall('item')]
 
     elif tag == 'tuple':
-        return tuple(_cast(item.text, item.attrib['type']) for item in element.findall('item')]
+        return tuple(_cast(item.text, item.attrib['type']) for item in element.findall('item')
 
     elif tag == 'dict':
         result = {}
