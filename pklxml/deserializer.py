@@ -1,5 +1,5 @@
 from lxml import etree
-import importlib
+import os, importlib
 
 # Whitelist of safe modules and classes
 ALLOWED_CLASSES = {
@@ -29,6 +29,18 @@ def secureParser():
 def load(file_path):
     parser = secureParser()
     tree = etree.parse(file_path, parser)
+    
+    if validate:
+        # Locate the XSD file relative to this script
+        xsd_path = os.path.join(os.path.dirname(__file__), "schema", "pklxml.xsd")
+        with open(xsd_path, 'rb') as f:
+            schema_doc = etree.parse(f)
+            
+        schema = etree.XMLSchema(schema_doc)
+        
+        if not schema.validate(tree):
+            raise ValueError("XSD validation failed:\n" + str(schema.error_log))
+
     return _deserialize(tree.getroot())
 
 def _deserialize(element):
