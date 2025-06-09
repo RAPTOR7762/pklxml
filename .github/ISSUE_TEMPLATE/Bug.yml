@@ -17,7 +17,7 @@ body:
   - type: textarea
     id: error-message
     attributes:
-      label: Error Message (if any):
+      label: Error Message (if any)
       description: Paste Error message as code
       placeholder: |
         I get this error message:
@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: Expected Behaviour:
+      label: Expected Behaviour
       description: Please describe the behavior you expect
       placeholder: I expect that
     validations:
