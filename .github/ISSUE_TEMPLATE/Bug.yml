@@ -11,7 +11,7 @@ body:
     attributes:
       label: What happened?
       description: Please describe the bug.
-      placeholder: When I...
+      placeholder: When I
     validations:
       required: true
   - type: textarea
@@ -21,9 +21,7 @@ body:
       description: Paste Error message as code
       placeholder: |
         I get this error message:
-        ```
-        Paste error message here...
-        ```
+        <!--Paste error message as code here...-->
     validations:
       required: false
   - type: textarea
@@ -44,6 +42,6 @@ body:
     attributes:
       label: Expected Behaviour:
       description: Please describe the behavior you expect
-      placeholder: I expect that...
+      placeholder: I expect that
     validations:
       required: true
