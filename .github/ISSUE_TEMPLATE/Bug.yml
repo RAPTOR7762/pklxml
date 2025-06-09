@@ -21,7 +21,9 @@ body:
       description: Paste Error message as code
       placeholder: |
         I get this error message:
-        <!--Paste error message as code here...-->
+        ```
+        (paste error message here)
+        ```
     validations:
       required: false
   - type: textarea
