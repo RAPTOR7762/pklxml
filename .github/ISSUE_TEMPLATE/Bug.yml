@@ -1,5 +1,5 @@
 name: Bug Template
-about: Use this template if you are reporting a bug
+description: Use this template if you are reporting a bug
 labels: bug
 body:
   - type: markdown
