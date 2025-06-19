@@ -5,6 +5,7 @@ import os, importlib
 ALLOWED_CLASSES = {
     "examples.examples_class": ["Person"],  # Extend as needed
 }
+MAX_DEPTH = 50  # or some other reasonable number
 
 # Custom XMLParser that blocks <!DOCTYPE>
 class NoDoctypeParser(etree.XMLParser):
@@ -43,7 +44,10 @@ def load(file_path):
 
     return _deserialize(tree.getroot())
 
-def _deserialize(element):
+def _deserialize(element, depth=0):
+    if depth > MAX_DEPTH:
+        raise ValueError("Maximum deserialization depth exceeded.")
+        
     tag = element.tag
 
     if tag == 'variable':
@@ -84,11 +88,12 @@ def _deserialize(element):
         return obj
 
     else:
-        return None
+        raise ValueError(f"Unknown tag: <{element.tag}>")
 
 def _import_class_secure(module_name, class_name):
     allowed = ALLOWED_CLASSES.get(module_name, [])
     if class_name not in allowed:
+        print(f"[SECURITY] Blocked class import: {module_name}.{class_name}")
         raise ImportError(f"Import of {class_name} from {module_name} is not allowed.")
     module = importlib.import_module(module_name)
     return getattr(module, class_name)
@@ -96,12 +101,15 @@ def _import_class_secure(module_name, class_name):
 def _cast(value, value_type):
     if value is None:
         return None
-    if value_type == 'int':
-        return int(value)
-    if value_type == 'float':
-        return float(value)
-    if value_type == 'str':
-        return value
-    if value_type == 'bool':
-        return value.lower() == 'true'
-    return value  # fallback
+    try:
+        if value_type == 'int':
+            return int(value)
+        if value_type == 'float':
+            return float(value)
+        if value_type == 'str':
+            return value
+        if value_type == 'bool':
+            return value.lower() == 'true'
+    except Exception as e:
+        raise ValueError(f"Failed to cast value '{value}' as '{value_type}': {e}")
+    raise ValueError(f"Unsupported value type: '{value_type}'")
